@@ -1,59 +1,52 @@
 ##########
-# collectionbuilder-csv
-# Jekyll Digital Collection Generator
-# https://github.com/CollectionBuilder/collectionbuilder-csv
+# collectionbuilder-gh
+# Jekyll Digital Collection Generator, designed for GitHub Pages
+# https://github.com/CollectionBuilder/collectionbuilder-gh
 ##########
 
 ##########
-# URL VARIABLES
+# URL VARIABLES [optional if using GitHub Pages!]
 #
-# site domain, full URL to the production location of your collection
-url: 
-# path to location on the domain if necessary e.g. /digital/hjccc
-baseurl: 
+# url is site domain, full URL to the production location of your collection
+# on GitHub Pages follows the pattern username.github.io
+#url: https://collectionbuilder.github.io 
+# baseurl is path to location on the domain if necessary e.g. /digital/hjccc
+# on GitHub Pages it is your github repository's name prefixed with a /
+#baseurl: /collectionbuilder-gh 
 # location of code, the full url to your github repository
-source-code: https://github.com/CollectionBuilder/collectionbuilder-csv
+source-code: https://github.com/CollectionBuilder/collectionbuilder-gh
 
 ##########
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: CollectionBuilder CSV
+title: The Tucson Zine Archive
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Digital Collection Magic with Static Web Technologies
+tagline: A digital repository of zines created by Tucson and Arizona artists. 
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "CollectionBuilder-CSV is a template for creating digital collection exhibits using static web technology."
-# keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
-keywords: idaho; history; inland northwest
+description: "The Tucson Zine archive is a digital repository created for the purpose of preserving Tucson's rich zine history. Made in collaboration with the
+Tucson Zine Fest, the repository consists of scanned zines from Groundworks' Zine Library as well as from private collections. The Tucson Zine Archive is created with the 
+philosophy of collaborative consumption, where works are freely distributed with the goal of providing community resources as opposed to seeking profit. While all zines will remain
+free to access, we encourage users to support the artists via donation or purchasing their works directly."
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
-author: CollectionBuilder
+author: Ruben Reynoso
 
 ##########
 # COLLECTION SETTINGS
 #
-# Set the metadata for your collection (the name of the CSV file in your _data directory that describes the objects in your collection) 
+# Set the metadata for your collection (the name of the csv file in your _data directory that describes the objects in your collection) 
 # Use the filename of your CSV **without** the ".csv" extension! E.g. _data/demo-metadata.csv --> "demo-metadata"
-metadata: demo-compoundobjects-metadata 
-# page generation settings [optional!]
-# [optional: only used if you need to tweak CB defaults or generate from more than one data file]
-# page_gen:
-#   - data: 'demo-metadata'
-#     template: 'item'
-#     name: 'objectid'
-#     dir: 'items'
-#     extension: 'html' 
-#     filter: 'objectid'  
+metadata: psychiana-demo
 
 ##########
 # Site/Organization Branding 
-#   Enter information for your organization (replacing the CDIL links and name below) if you'd like to brand your site with a logo
-#   To remove the branding, comment out these values, or delete them. 
+#   Uncomment these and enter information for your organization (replacing the CDIL links and name below) if you'd like to brand your site with a logo
 #
-organization-name: "Center for Digital Inquiry and Learning (CDIL)"
-organization-link: https://cdil.lib.uidaho.edu/
-organization-logo-banner: https://cdil.lib.uidaho.edu/storying-extinction/assets/img/cdil.png
-organization-logo-nav: https://cdil.lib.uidaho.edu/assets/img/logo.png
+# organization-name: "Center for Digital Inquiry and Learning (CDIL)"
+# organization-link: https://cdil.lib.uidaho.edu/
+# organization-logo-banner: https://cdil.lib.uidaho.edu/storying-extinction/assets/img/cdil.png
+# organization-logo-nav: https://cdil.lib.uidaho.edu/assets/img/logo.png
 
 ##########
 # ROBOTS EXCLUDE
@@ -69,7 +62,7 @@ organization-logo-nav: https://cdil.lib.uidaho.edu/assets/img/logo.png
 # (this is done automatically by gh-pages build)
 #
 # ignore stuff
-exclude: [docs/, Rakefile, rakelib/, README.md, LICENSE, CITATION.cff, CODE_OF_CONDUCT.md, CONTRIBUTING.md, SECURITY.md]
+exclude: [docs/, Rakefile, README.md, LICENSE, CITATION.cff, CODE_OF_CONDUCT.md, CONTRIBUTING.md]
 # compress CSS output
 sass:
   style: compressed
